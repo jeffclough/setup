@@ -93,4 +93,10 @@ WARNING: Access to the remote API on a privileged Docker daemon is equivalent
 ================================================================================
 ```
 
+# Add appropriate users to the docker group
+
+```shell
+sudo usermod -aG docker jclough
+```
+
 
