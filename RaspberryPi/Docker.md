@@ -1,14 +1,14 @@
-# Installing Docker Engine (CE) on Raspberry Pi
+## Installing Docker Engine (CE) on Raspberry Pi
 
 *This is a distillation of information I found at [Install Docker Engine On Debian](https://docs.docker.com/engine/install/debian/).*
 
-# Uninstall Old Version of Docker If One Exists
+## Uninstall Old Version of Docker If One Exists
 
 ```shell
 sudo apt-get remove docker docker-engine docker.io containerd runc
 ```
 
-# Download Docker's "Convenience Script" Because We're on a Raspberry Pi
+## Download Docker's "Convenience Script" Because We're on a Raspberry Pi
 
 Install Docker's Official GPG key.
 
@@ -32,7 +32,7 @@ sudo sh ./get-docker.sh
 The output might look something like this:
 
 ```shell
-# Executing docker install script, commit: 93d2499759296ac1f9c510605fef85052a2c32be
+## Executing docker install script, commit: 93d2499759296ac1f9c510605fef85052a2c32be
 + sh -c apt-get update -qq >/dev/null
 + sh -c DEBIAN_FRONTEND=noninteractive apt-get install -y -qq apt-transport-https ca-certificates curl >/dev/null
 + sh -c curl -fsSL "https://download.docker.com/linux/raspbian/gpg" | gpg --dearmor --yes -o /usr/share/keyrings/docker-archive-keyring.gpg
@@ -93,7 +93,7 @@ WARNING: Access to the remote API on a privileged Docker daemon is equivalent
 ================================================================================
 ```
 
-# Add appropriate users to the docker group
+## Add appropriate users to the docker group
 
 ```shell
 sudo usermod -aG docker jclough
