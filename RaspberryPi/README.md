@@ -15,7 +15,7 @@ Install Zshell and Git first. Be sure to enable sudo for jclough.
 
 ```shell
 sudo bash
-apt-get --yes install git zsh
+apt-get --yes install git vim zsh
 adduser -aG sudo --shell /bin/zsh jclough
 exit
 ```
